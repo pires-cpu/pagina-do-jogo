@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', cursive, sans-serif;
+  background: linear-gradient(135deg, #3b82f6, #2563eb, #7F00FF, #3600a1);
+  animation: background 15s ease infinite;
+  color: #2c3e50;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+  animation: bounceIn 1s ease forwards;
+  height: 190px;
+}
+
+header img {
+  width: 320px;
+  height: auto;
+  margin-bottom: 12px;
+  filter: drop-shadow(2px 6px 8px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: rotate(10deg) scale(1.1);
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #60a5fa; 
+  text-shadow: 2px 2px 8px #2563eb;
+  letter-spacing: 0.15em;
+
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #ffffffcc;
+  padding: 35px 30px;
+  border-radius: 25px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #2563eb; /* azul escuro vibrante */
+  margin-bottom: 14px;
+  border-bottom: 4px solid #3b82f6;
+  padding-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #1e293b;
+  margin-bottom: 28px;
+  font-weight: 600;
+  text-shadow: 0 0 3px #bfdbfe;
+}
+
+main p:last-child {
+  margin-bottom: 0;
+}
+
+.botao {
+  padding: 50px;
+  background: linear-gradient(135deg, #6037e5, #4A00E0, #5602aa, #3600a1);
+  border: solid;
+  padding: 15px 45px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-style: hidden;
+  border-radius: 35px;
+  box-shadow: 0 6px 15px #00000066;
+  animation: gradientShift 15s ease infinite;
+  cursor: pointer;
+  margin-top: 20px;
+  user-select: none;
+  font-palette: black;
+
+}
+
+.jogar{
+  text-decoration-color: white;
+  text-decoration: none;
+}
+
+button.jogar:hover {
+  background: #000000;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px #ffffff99;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  main {
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button.jogar {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.2rem;
+  }
+}
+body {
+  font-family: 'Comic Neue', cursive, sans-serif;
+  color: #2c3e50;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+  
+    
